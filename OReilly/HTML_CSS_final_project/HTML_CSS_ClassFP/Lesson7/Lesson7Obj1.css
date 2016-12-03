@@ -1,0 +1,16 @@
+body {
+     background-color: #BBBBBB;
+     margin: 20px;
+}
+
+h1 {
+     border-bottom: 2px solid black;
+}
+
+p#pullquote {
+     background-color: #555555;
+     color: white;
+     margin: 15px 10px 10px 10px;
+     border: 8px groove white;
+     padding: 10px;
+}
