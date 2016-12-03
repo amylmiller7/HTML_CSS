@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<!-- modified so that the bullet points stay black but that the text in the bullet points changes color. remove id from <li>. Added <span> with id. Change CSS from li# to span#.-->
+ <head>
+ <meta charset="utf-8">
+ <title>My favorite ducks</title>
+ <style>
+   body {font-family: Calibri, sans-serif;
+   }
+   span#first_duck {background-color: blue;
+                  color: yellow;
+   }
+   span#second_duck {background-color: yellow;
+                   color: blue;
+   }
+   span#third_duck {font-family: fantasy;
+   }
+ </style>
+ </head>
+ <body>
+ <h1>My favorite ducks are...</h1>
+ <ul>
+ <li><span id="first_duck">Huey</span></li>
+ <li><span  id="second_duck">Louie</span></li>
+ <li><span id="third_duck">Dewey</span></li>
+ </ul>
+ </body>
+</html> 

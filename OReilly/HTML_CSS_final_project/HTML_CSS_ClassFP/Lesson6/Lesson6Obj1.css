@@ -1,0 +1,15 @@
+body {
+    font-family: cursive;
+    background-color: #FFCCCC;
+}
+.alt_coloring {
+    color: white;
+    background-color: red;
+}
+h2#first_h2 {
+    font-family: Calibri, sans-serif;
+}
+
+h1#first_h1 {
+    font-family: fantasy;
+}
