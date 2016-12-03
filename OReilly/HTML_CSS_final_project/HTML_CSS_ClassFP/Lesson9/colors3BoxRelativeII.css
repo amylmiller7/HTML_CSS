@@ -1,0 +1,44 @@
+/*  
+Lorri Note: The differences in relative positioning though are much more obvious if you use 50 pixels from the 
+top for the box divs and add the 200 px from the container div.
+ 
+Amy Note to Self: making boxes relative means that they are placed relative to the container element which is relative, 
+not relative to 0,0. The result is NOT the same as if absolute was used...I thought the point was to receive the same
+result with absolute and relative positioning....with the coding below, the boxes are further to the right than 
+in the absolute example.
+*/
+
+div.box {
+	width: 100px;
+	height: 50px;
+	
+	/* changed from absolute to relative */
+	position: relative;
+}
+
+div#container {
+	top: 200px;
+	left: 200px;
+	position: relative;
+}
+
+div#red {
+	background-color: red;
+	/*left: 50px;*/
+	left: 200px;
+	top: 50px;
+}
+
+div#green {
+	background-color: green;
+	/*left: 160px;*/
+	left: 310px;
+	top: 0px;
+}
+
+div#blue {
+	background-color: blue;
+	/*left: 270px;*/
+	left: 420px;
+	top: -50px;
+}

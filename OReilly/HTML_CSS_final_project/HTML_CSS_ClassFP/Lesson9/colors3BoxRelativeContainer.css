@@ -1,0 +1,53 @@
+/*    Each <div> element with the class "box" is 100px wide and 50px high (use height: 50px in your CSS to set the height of a block element like <div>).
+    The "red" <div> should have a red background color and be positioned 50px from the top and left.
+    The "green" <div> should have a green background color and be positioned so that its left side is 10px to the right of the red <div>.
+    The "blue" <div> should have a blue background color and be positioned so that its left side is 10px to the right of the green <div>.
+    Now that you've positioned the colored <div> elements, change the CSS so that their positions are shifted over 
+    200px from the top and 200px from the left, by positioning the "container" <div>.
+    */
+
+/*   Lorri suggested making the box elements relative...boxes normally one on top of another...
+but if make them relative, and then add px to move first and second boxes down to where third box is...
+You can use relative positioning on the boxes but it takes some thinking.
+
+Remember that relative means the element moves in relation to where it would normally be. 
+These are box level elements, so without any positioning they would be stacked vertically. 
+And they are each 50 pixels in height. So if the first one was moved down by 50 pixels it would 
+be on the same level vertically as the second box if it had no positioning set. The third box would still 
+be 50 pixels below that.
+
+Amy Note to Self: Trying to get same results as with Absolute example using Container element too. Basically, the only thing that needed to change was the top of each box. (In normal flow the boxes would have stacked on top of each other. To horizontally align them, the top needed to change.)
+*/
+
+div.box {
+	width: 100px;
+	height: 50px;
+	
+	/* changed from absolute to relative */
+	position: relative;
+}
+
+div#container {
+	top: 200px;
+	left: 200px;
+	position: relative;
+}
+
+div#red {
+	background-color: red;
+	left: 50px;
+	top: 50px;
+	
+}
+
+div#green {
+	background-color: green;
+	left: 160px;
+	top: 0px;
+}
+
+div#blue {
+	background-color: blue;
+	left: 270px;
+	top: -50px;
+}

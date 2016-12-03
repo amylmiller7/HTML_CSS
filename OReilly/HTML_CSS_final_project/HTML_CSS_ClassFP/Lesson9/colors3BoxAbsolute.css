@@ -1,0 +1,39 @@
+/*    Each <div> element with the class "box" is 100px wide and 50px high (use height: 50px in your CSS to set the height of a block element like <div>).
+    The "red" <div> should have a red background color and be positioned 50px from the top and left.
+    The "green" <div> should have a green background color and be positioned so that its left side is 10px to the right of the red <div>.
+    The "blue" <div> should have a blue background color and be positioned so that its left side is 10px to the right of the green <div>.
+    Now that you've positioned the colored <div> elements, change the CSS so that their positions are shifted over 
+    200px from the top and 200px from the left, by positioning the "container" <div>.
+
+Amy Note to Self: end goal to horizontally align boxes; normal flow is vertical alignment.
+    */
+
+div.box {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+}
+
+div#container {
+	top: 200px;
+	left: 200px;
+	position: relative;
+}
+
+div#red {
+	background-color: red;
+	left: 50px;
+	top: 50px;
+}
+
+div#green {
+	background-color: green;
+	left: 160px;
+	top: 50px;
+}
+
+div#blue {
+	background-color: blue;
+	left: 270px;
+	top: 50px;
+}
