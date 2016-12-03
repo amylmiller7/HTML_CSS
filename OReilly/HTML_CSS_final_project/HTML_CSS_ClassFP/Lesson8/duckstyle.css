@@ -1,0 +1,14 @@
+/*
+    1. sans-serif font from the body.
+    2. color of lightgrey from the div with the id "content."
+    3. text-align of center from the <p> elements.
+*/
+
+body {font-family: Verdana Helvetica Arial sans-serif;
+}
+
+div#content {color: lightgrey;
+}
+
+p {text-align: center;
+}
