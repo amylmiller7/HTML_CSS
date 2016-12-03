@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<!-- changed so there is one submit button...needed to have only one form 
+Works BUT WILL NOT VALIDATE
+
+WILL VALIDATE IF I have only the container div. The problem starts when I separate questions into two divs in order to do positioning. -->
+<head>
+  <meta charset="utf-8">
+  <title>Early Daoism in China</title>
+  <link rel="stylesheet" href="Lesson10Obj1_3.css">
+</head>
+<body>
+  <h1>Early Daoism in China: Quiz #1</h1>
+  <p>Please answer all questions and carefully check your work before clicking "Submit". Once you have clicked "Submit", you cannot go back and change your answers.
+  Good luck!
+   </p>
+     <form method="get" action="https://coderunner2.oreillyschool.com/coderunner/formtester.php">
+  <div id="questions">
+    <label for="question1">1. What was the name of the first Daoist group in Chinese historical records?</label>
+    <input type="text" name="question1" id="question1"  class="mytext" placeholder="Please type answer here.">
+  <br>
+  
+    <p>2. Where was the group originally located in modern-day China?<br> (Pick only one.)</p>
+    <input type="radio" name="question2" id="Beijing" value="Beijing">
+      <label for="Beijing">Near Beijing</label>
+    <input type="radio" name="question2" id="Sichuan" value="Sichuan">
+      <label for="Sichuan">Sichuan province</label>
+    <input type="radio" name="question2" id="Guangzhou" value="Guangzhou">
+      <label for="Guangzhou">Guangdong province</label>
+    <input type="radio" name="question2" id="Nanjing" value="Nanjing">
+      <label for="Nanjing">Near Nanjing</label>
+  <br>
+  
+    <p>3. The main practices of the group involved...<br>(Check only one.)</p>
+    <input type="checkbox" name="question3" id="morality" value="morality">
+      <label for="morality">Morality</label>
+    <input type="checkbox" name="question3" id="heqi" value="heqi">
+      <label for="heqi">Heqi</label>
+    <input type="checkbox" name="question3" id="ascetic_practices" value="ascetic practices">
+      <label for="ascetic_practices">Ascetic practices</label>
+    <input type="checkbox" name="question3" id="taiqi" value="taiqi">
+      <label for="taiqi">Taiqi</label>
+    <input type="checkbox" name="question3" id="none_of_the_above" value="none of the above">
+      <label for="none_of_the_above">None of the above</label>
+    <br>
+
+      <p>4. Describe what happened to the group in 215 C.E. and why is this important for future centuries?</p>
+      <textarea name="question4" rows="5" cols="75" class="mytextarea"></textarea><!-- Note: any space between <textarea> tags will make the cursor not appear at position 0,0 in textbox -->
+    </div>
+    
+    <div id="names">
+    	<label for="firstname">First name:</label>
+    	<input type="text" name="firstname" id="firstname" class="names" placeholder="Please type first name." required><br><br>
+    	<label for="lastname">Last name:</label>
+    	<input type="text" name="lastname" id="lastname" class="names" placeholder="Please type last name." required>
+    	<br><br>
+        <input type="submit" value="Submit">
+
+     </div>
+     </form>
+</body>
+</html>
