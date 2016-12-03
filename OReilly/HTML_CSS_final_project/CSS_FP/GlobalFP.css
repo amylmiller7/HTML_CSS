@@ -1,0 +1,527 @@
+/*************************************************
+**************************************************
+
+Website Name: Final Project: Amy Lynn Miller's Website
+Website Author: Amy Lynn Miller
+
+Used 
+Vanilla CSS 1.0.2
+http://cssreset.com
+Plus own styling for post-CSS reset styling
+
+Color Guide
+***************
+Beige (light) (nav background, html#gardens_html background, html#main_html background, html#class_lessons background): #facbab;
+Black (body#whitemag background, body#callalilies background, a.headings_link color, table.resume_table th text): #000000;
+Black (nearly) (body#whitetulips background): #19160f;
+Blue (nav link color): #4039bf;
+Blue (body#tuliphyacinth text): #032b63;
+Blue (dark) (body#fountainflowers text): #1a2c44;
+Blue (light) (body#beardediris background): #6967cf;
+Blue (muted) (body#fountainflowers background): #517a90;
+Green (dark yellow) (body#moonviewing text): #394304;
+Green (dark yellow) (body#yellowtulip text): #35471d;
+Green (muted) (body#tulipsdoorway background): #60766a;
+Grey (dark) (TOC link color, TOC indented link color, .top link color): #444;
+Grey (light) (body#whitetulips text): #cecfca;
+Grey (light) (html.resume_html background): #cccccc;
+Mauve (light) (nav link selected background): #b37489;
+Pink (body#pinkdahlia background): #ce6681;
+Pink (pale) (table.resume_table th background): #b37489;
+Purple (body#quotes_body text): #4B0082;
+Purple (link color): #403967;
+Purple (table.quotes_table alternate rows background): #4B0082;
+Purple (dark) (body#tulipcolumbines text): #28013c;
+Purple (deep) (body#beardediris text): #731f5b;
+Purple (muted) (body#tulipcolumbines background): #5e546c;
+Purple (pale) (body#quotes_body background): #cbb8c3;
+Purple (pale) (body#tuliphyacinth background): #a6aeb9;
+Red (a.TOC:visited, a.TOC_indent:visited, a.proj_link:visited): red;
+Red (brick) (body#pinkdahlia text): #870213;
+White	(body#whitemag text, body#callalilies text, table.quotes_table alternate row text): #FFFFFF;
+Yellow (bright)	 (body#yellowtulip background): #f7e460;
+Yellow (light green) (body#tulipsdoorway text): #bdbc23;
+Yellow (pale) (body#moonviewing background): #c7be97;
+
+*************************************************/
+
+/************************************************
+*************************************************
+1. Header & Nav Styles 
+2. Main Body Styles 
+3. Image Styles
+4. Link Styles
+5. List Styles
+6. Table Styles
+7. Footer Styles 
+*************************************************
+************************************************/
+
+/***********************************************
+1. Header & Nav Styles 
+***********************************************/
+
+h1 {font-size: 150%;
+}
+
+h1.quotes_font {font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+/* originally used fantasy font-family for photos pages; rendered as sans-serif font in FF on a PC, and huge/bold in IE on PC; lesson learned: NEVER USE FANTASY FONT-FAMILY*/
+h1.gardens_h1, h1.gardens_font_LG {
+	/*font-family: fantasy;
+	font-size: 180%;*/
+	text-align: center;
+}
+
+h2 {font-size: 130%;
+}
+
+h2#summary{text-align: center;
+}
+
+h3 {font-size: 100%;
+}
+
+h4 {font-size: 90%;
+}
+
+/* selects all p and ul after h1, h2; same as using class for these p and ul, but I do not need to alter html file */
+h1+p, h2+p, h1+ul, h2+div, h2+ul, h2+h3, h3+ul, h3+h4 {margin-top: -.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-top: 25px;
+}
+
+nav {
+	background-color: #facbab;
+	margin: 10px 0px 20px 0px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline;
+	padding: 8px 20px 8px 20px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	color: #40396f;
+	font-weight: bold;
+}
+
+nav ul li.selected {background-color:#b37489;
+}
+
+body#quotes_body nav {font-size: medium;
+}
+
+/***********************************************
+2. Main Body Styles
+***********************************************/
+address {
+    font-style:normal;
+    line-height: 1.2em;
+    margin:0;
+}
+
+blockquote {margin:0 1.5em 1.5em 1.5em;
+}
+
+blockquote.gardens_a, blockquote.gardens_b {
+	/*font-family: fantasy;*/
+	font-size: 110%;
+	font-style: italic;
+	text-align: center;
+}
+
+blockquote.gardens_a_sub {
+    /*font-family: fantasy;
+    font-size: 120%;*/
+    font-size: 110%;
+    font-style: italic;
+	text-align:center;
+}
+
+b, strong, dfn, th, dl dt {font-weight: bold;
+}
+
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: medium;
+	line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body#beardediris {
+	background-color: #b9b7cf;
+	color: #731f5b;
+}
+
+body#fountainflowers {
+	background-color: #517a90;
+	color: #1a2c44;
+}
+
+body#moonviewing {
+	background-color: #c7be97;
+	color: #394304;
+}
+
+body#pinkdahlia {
+	background-color: #ce6681;
+	color: #870213;
+}
+
+body#quotes_body {
+	background-color: #cbb8c3;
+	color: #4B0082;
+	/*setting font in body would affect nav 
+	font-family: "Comic Sans MS", cursive, sans-serif; */
+	font-size: large;
+}
+
+body#tulipcolumbines {
+	background-color: #5e546c;
+	color: #28013c;
+}
+
+body#tuliphyacinth {
+	background-color: #a6aeb9;
+	color: #032b63;
+}
+
+body#tulipsdoorway {
+	background-color: #60766a;
+	color: #bdbc23;
+}
+
+body#whitemag, body#callalilies {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+body#whitetulips {
+	background-color: #19160f;
+	color: #cecfca;
+}
+
+body#yellowtulip {
+	background-color: #f7e460;
+	color: #35471d;
+}
+
+code.markup {
+	display: block;
+	line-height: 1em;
+	margin-left: 1.8em;
+}
+
+del {text-decoration: line-through;
+}
+
+div#block1 {
+	left: 10%;
+	position: absolute;
+	top: 0px;
+}
+
+div#block2 {
+	left: 30%;
+	position: absolute;
+	top: 0px;
+}
+
+div#block3 {
+	left: 50%;
+	position: absolute;
+	top: 0px;
+}
+
+div#block4 {
+	left:70%;
+	position: absolute;
+	top: 0px;
+}
+
+div#block5 {
+	left: 4%;
+	position: absolute;
+	top: 200px;
+}
+
+div#block6 {
+	left: 18%;
+	position: absolute;
+	top: 200px;
+}
+
+div#block7 {
+	left: 32%;
+	position: absolute;
+	top: 200px;
+}
+
+div#block8 {
+	left: 46%;
+	position: absolute;
+	top: 200px;
+}
+
+div#block9 {
+	left: 59%;
+	position: absolute;
+	top: 200px;
+}
+
+div#block10 {
+	left: 73%;
+	position: absolute;
+	top: 200px;
+}
+
+div#block11 {
+	left: 87%;
+	position: absolute;
+	top: 200px;
+}
+
+div#block12 {
+	position: relative;
+	top: 450px;
+}
+
+div#bullets ul{text-align: center;
+}
+
+/*div#gardens_content {
+	font-family: fantasy;
+	font-size: 120%;
+}*/
+
+div#gardens_images {
+	position: relative;
+	top: 50px;
+	width: 100%;
+}
+
+em, i, span.italic, span.title_book  {font-style: italic;
+}
+
+figcaption.caption {
+	/*font-family: fantasy;*/
+	/*font-size: 130%;*/
+	font-size: 110%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+figure#photo_1000 {text-align: center;
+}
+
+html#class_lessons, html#main_html { 
+  	background: url(../20130203Jerash8R_BG_1000_40.jpg);
+   /*background-color as default if image not available*/
+  	background-color: #facbab;
+}
+
+html#gardens_html { 
+  	background: url(../GardensFP/20130407GoldenGatePark69_800_40.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	/*background-color as default if image not available*/
+  	background-color: #facbab;
+  	background-size: cover;
+}
+
+html.resume_html {background-color: #cccccc;
+}
+
+#quotes p:first-letter {font-size: 150%;
+}
+
+p {margin:0 0 1.2em 0;
+}
+
+p+code {margin-top: -.5em;
+}
+
+p+ul, p+ol {margin-top: -1.3em;
+}
+
+p.quotes_font{font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+span.init_cap {font-size: 150%;
+}
+
+span.job_loc_date {font-weight: normal;
+}
+
+span.section_name  {font-weight: bold;
+}
+
+sup, sub {line-height:0;
+}
+
+/***********************************************
+3. Image Styles
+***********************************************/
+img {max-width: 100%;
+}
+
+img.photo_border {border: 5px ridge white;
+}
+
+img.photo_border_LG {border: 20px ridge white;
+}
+
+/***********************************************
+4. Link Styles
+***********************************************/
+a {
+	color: #40396f;
+	text-decoration: none;
+}
+
+/*to revert to black <h> that turn blue by default when they are TOC links*/
+a.headings_link {color: #000000;
+}
+
+a.plain:link {text-decoration: none;
+}
+
+a.proj_link:visited {color: red;
+}
+
+a.TOC_indent {margin: 20px;
+}
+
+a.TOC:link, a.TOC_indent:link, .top {
+	color: /*#585858;*/ #444;
+	text-decoration: none;
+}
+
+a.TOC:visited, a.TOC_indent:visited {color: red;
+}
+
+/***********************************************
+5. List Styles 
+***********************************************/
+
+li ul, li ol {
+	margin:0 2em;
+	list-style-type: circle;
+}
+
+ul, ol {margin:0 1.5em 1em 3em;
+}
+
+ul {list-style-type:disc;
+}
+
+ol {list-style-type:decimal;
+}
+
+/*ol ol {list-style: upper-alpha;
+}
+
+ol ol ol {list-style: lower-roman;
+}
+
+ol ol ol ol {list-style: lower-alpha;
+}
+
+dl {margin:0 0 1.5em 0;
+}
+
+dd {margin-left:1.5em;
+} */
+
+/*specifies that the the list-item markers should appear inside the content flow */
+ul.summary_points{list-style-position: inside;
+}
+
+/***********************************************
+4. Table Styles
+***********************************************/
+
+table {margin-bottom:1.4em;
+}
+
+table.quotes_table {
+	border-collapse: collapse;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+
+table.quotes_table td{
+	padding: 5px 20px 5px 20px;
+	vertical-align: middle;
+}
+
+table.quotes_table td:nth-child(odd) {width: 70%;
+}
+
+table.quotes_table th {
+	/*background-color: #b37489;*/
+	font-size: 120%;
+	padding: 5px;
+}
+
+/* can have background image or color table rows...not both...*/
+table.quotes_table tr:nth-child(even) {
+	background-color: #4B0082;
+	color: #FFFFFF;
+}
+
+table.resume_table {
+	margin-left: 20px;
+	margin-right: 40px;
+}
+
+table.resume_table caption {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+table.resume_table th {
+	background-color: #b37489;
+	color: #000000;
+}
+
+table.resume_table th, table.resume_table tr, table.resume_table td {
+	border: 2px solid #a9a9a9;
+	padding: 10px 10px;
+	vertical-align: middle;
+}
+
+th, td, caption {padding:4px 10px 4px 5px;
+}
+
+td.td_subsection {
+	font-weight: bold;
+	text-align: center;
+}
+
+/***********************************************
+4. Footer Styles 
+***********************************************/
+footer.created {font-size: 75%;
+}
+
+
+
+
+
