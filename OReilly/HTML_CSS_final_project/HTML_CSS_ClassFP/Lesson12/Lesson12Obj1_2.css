@@ -1,0 +1,24 @@
+html { 
+  background: url(20120901GoldenGatePark80R_1000_30.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body, a {
+  font-family: Calbri, Verdana, Helvetica, Arial, sans-serif;
+  color: #a34e07;
+}
+
+h1{
+  font-size: 175%;
+  font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+p#accessibility {
+  margin: 0px;
+}
+.key {   
+  font-weight: bold;
+  }
