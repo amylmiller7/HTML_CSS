@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    background-color: #7aaed0;
+  }
+  .problem {
+     font-weight: bold;
+  }
+  table {
+   /* border-collapse: collapse */
+  }
+  caption {
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+  }
+  th {
+    text-align: left;
+    width: 250px;
+    padding: 10px;
+    font-weight: normal;
+  }
+  td {
+    width: 400px;
+    padding: 10px;
+  }
+  tr.subfamily th, tr.genus th {
+    font-weight: bold;
+  }
+   tr span.tabheader {
+    font-weight: normal;
+  }
+  tr.subfamily {
+    font-size: 110%;
+  }
+  tr.species {
+    background-color: lightblue;
+  }
+  #source {
+    font-style: italic;
+    font-size: 90%;
+  }
+  #source a:link, a.table:link {
+    color: yellow;
+  }
+  #source a:hover, a.table:hover{
+    color: green;
+  }
+ #source a:visited, a.table:visited {
+    color: purple;
+    /*not working in FF, but works in Chrome on a Mac */
+  }

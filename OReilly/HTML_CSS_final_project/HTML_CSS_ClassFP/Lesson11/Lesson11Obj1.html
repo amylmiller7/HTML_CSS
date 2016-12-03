@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hamsters!</title>
+  <link type="text/css" rel="stylesheet" href="Lesson11Obj1.css">
+  <link rel="icon" type="image/ico" href="testc.ico">
+</head>
+<body><a id="top"></a>
+<h1>Hamsters: Who Knew There Were So Many Different Types?!</h1>
+
+<p>I had golden and teddy bears hamsters in my youth, but since then the types of hamsters have proliferated. 
+I looked into getting a dwarf hamster some years ago, but shied away from them after I heard that they 
+tend to get nervous and pee in your hands. (Something I could do without.)</p>
+
+<a href="#table" class="table" >Skip to table</a>
+
+<h2>Logic Behind the Table Structure</h2>
+<p>Why did I choose this data and what was my decision-making process for structuring the table to best 
+manage that data?
+For instance, why did I pick rows or columns for the table headings?
+Did I create a separate cell for each item of data or did I combine some pieces of data, and if so, why? </p>
+
+<p>The fact that there were so many different genus and species suggested that it would be best to use vertical table 
+headers (with &lt;th&gt; in each &lt;tr&gt;) rather than horizontal ones (with all &lt;th&gt; in one &lt;tr&gt;). 
+I put each category in a table row with the description of the particular species 
+in a table cell (&lt;td&gt;) in the same row. So each row had a header (e.g., subfamily, genus, species) and 
+possibly a description (e.g., Mongolian hamster).</p>
+
+<p><span class="problem">Problem:</span> This created a problem when I validated the file. All of my rows did 
+not have the same number of columns. I received the error message: A table row was 2 columns wide 
+and exceeded the column count established by the first row (1). Solution: Since some &lt;tr&gt; did not have both
+&lt;th&gt; and &lt;td&gt;, I added the attribute colspan="2" to the sole &lt;th&gt; or &lt;td&gt; tag in 
+the &lt;tr&gt;.</p>
+
+<a href="#table" class="table">Skip to table</a>
+
+<h2>Logic Behind the Table Styling and Its Impact on the HTML</h2>
+<p>I set up general styling with a rule for &lt;body&gt;. I found that I liked the table having default borders, which allowed 
+the background color to come through in between the rows in the table, so I did not collapse the table borders. </p>
+
+<p><span class="problem">Problem:</span> I wanted the text in the header/the first column of the table 
+to have a separate style from the second column. Solution: I set up a rule for &lt;th&gt; in the CSS.</p>
+
+<p><span class="problem">Next problem:</span> I didn&apos;t want the table to fill the entire browser window. 
+Solution: I set up a rule for &lt;td&gt; and added a width that looked visually pleasing to the rules 
+for &lt;th&gt; and &lt;td&gt;.</p>
+
+<p><span class="problem">Next problem:</span> I wanted to call out the rows that only had a header and no other cells, namely the subfamily 
+and genus rows, and make them bold. Solution: By default, all &lt;th&gt; tags are bold. To make only the &lt;th&gt; 
+with subfamily and genus bold, I added font-weight: normal; to the body rule; created two classes (subfamily and genus) 
+for the &lt;tr&gt; tags that contained subfamily and genus th; and created a rule for these classes
+(tr.subfamily th, tr.genus th) that set the font-weight to bold. </p>
+
+<p><span class="problem">Next problem:</span> Some genus classes had extra text in parentheses that 
+I didn&apos;t want bold. By creating a rule for tr.subfamily th, tr.genus th and 
+setting the font-weight to bold, all text in these &lt;th&gt; tags had become bold. 
+Solution: I added a &lt;span&gt; tag with a class of &quot;tabheader&quot; around these items 
+(e.g., (golden hamsters)) and added a rule to the CSS (tr span.tabheader) to set the font-weight back to normal. </p>
+
+<p><span class="problem">Next problem:</span> I wanted to style the &lt;source&gt; content. Solution: I set up an id 
+for &quot;source&quot; and then wrote various rules for the text as well as the link behavior. I also set up links
+elsewhere on the page to display only some of this behavior (e.g., links with the class "table").</p><br><br>
+
+
+<table>
+  <caption><a id="table">Classification of Hamsters</a></caption>
+  <tr>
+    <td colspan="2"><a href="#top" class="table">Back to top</a></td>
+  </tr>
+  <tr  class="subfamily">
+    <th colspan="2">Subfamily Cricetinae</th>
+  </tr>
+  <tr  class="genus">
+    <th colspan="2">Genus Allocricetulus</th>
+  </tr>
+  <tr class="species">
+    <th>Species A. curtatus</th>
+      <td>Mongolian hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species A. eversmanni</th>
+      <td>Eversmann&apos;s or Kazakh hamster</td>
+  </tr>
+  <tr class="genus">
+    <th colspan="2">Genus Cansumys</th>
+  </tr>
+  <tr class="species">
+    <th>Species C. canus</th>
+      <td>Gansu hamster</td>
+  </tr>
+  <tr  class="genus">
+    <th colspan="2">Genus Cricetulus</th>  
+  </tr>
+  <tr class="species">
+    <th>Species C. alticola</th>
+      <td>Tibetan dwarf or Ladak hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species C. barabensis, including "C. pseudogriseus" and "C. obscurus"</th>
+      <td>Chinese striped hamster, also called Chinese hamster; striped dwarf hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species C. griseus</th>
+      <td>Chinese (dwarf) hamster, also called rat hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species C. kamensis</th>
+      <td>Kam dwarf hamster or Tibetan hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species C. longicaudatus</th>
+      <td>long-tailed dwarf hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species C. migratorius</th>
+      <td>gray dwarf hamster, Armenian hamster, migratory grey hamster; grey hamster; migratory hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species C. sokolovi</th>
+      <td>Sokolov&apos;s dwarf hamster</td>
+  </tr>
+  <tr  class="genus">
+    <th colspan="2">Genus Cricetus</th>
+  </tr>
+  <tr class="species">
+    <th>Species C. cricetus</th>
+      <td>European hamster, also called common hamster or black-bellied field hamster</td>
+  </tr>
+  <tr  class="genus">
+    <th colspan="2">Genus Mesocricetus <br><span class="tabheader">(golden hamsters)</span></th>  
+  </tr>
+  <tr class="species">
+    <th>Species M. auratus</th>
+      <td>golden or Syrian hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species M. brandti</th>
+      <td>Turkish hamster, also called Brandt&apos;s hamster; Azerbaijani hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species M. newtoni</th>
+      <td>Romanian hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species M. raddei</th>
+      <td>Ciscaucasian hamster</td>
+  </tr>
+  <tr  class="genus">
+    <th colspan="2">Genus Phodopus <br><span class="tabheader">(dwarf hamsters)</span></th>
+  </tr>
+  <tr class="species">
+    <th>Species P. campbelli</th>
+      <td>Campbell&apos;s dwarf hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species P. roborovskii</th>
+      <td>Roborovski hamster</td>
+  </tr>
+  <tr class="species">
+    <th>Species P. sungorus</th>
+      <td>Djungarian hamster or winter-white Russian dwarf hamster</td>
+  </tr>
+  <tr  class="genus">
+    <th colspan="2">Genus Tscherskia</th>
+  </tr>
+  <tr class="species">
+    <th>Species T. triton</th>
+    <td>greater long-tailed hamster, also called Korean hamster</td>
+  </tr>
+  <tr>
+  <td id="source" colspan="2">Source: <a href="http://en.wikipedia.org/wiki/Hamster" target="_blank">Wikipedia</a></td>
+  </tr>
+</table>
+</body>
+</html>
