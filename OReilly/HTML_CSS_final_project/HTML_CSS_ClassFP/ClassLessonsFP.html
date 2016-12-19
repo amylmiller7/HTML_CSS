@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en" id="class_lessons" >
+<head>
+ 	<meta charset="utf-8">
+ 	<meta name="description" content="Projects from O&apos;Reilly School HTML and CSS course">
+	<meta name="keywords" content="HTML, CSS, online class, O&apos;Reilly, class lessons">
+	<meta name="author" content="Amy Lynn Miller"> 
+ 	<title>Final Project: Class Lessons...Roundup of HTML and CSS</title>
+ 	<link type="text/css" rel="stylesheet" href="../MasterFP.css">
+ 	<link type="image/ico" rel="icon" href="../jing.ico">
+</head>
+
+<body>
+	<header>
+		<h1><a id="top" class="headings_link">Class Lessons...Roundup of HTML and CSS</a></h1>
+	</header>
+	
+	<nav>
+		<ul>
+		<!--title for accessbility. 
+		Repeat nav on every html page with different item with "selected" class -->
+			<li><a href="../FinalProject.html" class="plain" title="My home page">Home</a></li>
+			<li><a href="../ResumeFP/ResumeFP.html" class="plain" title="My resume">Resume</a></li>
+			<li class="selected"><a href="ClassLessonsFP.html" class="plain" title="HMTL and CSS files submitted as homework for O&apos;Reilly class">Class Lessons</a></li>
+			<li><a href="../GardensFP/GardensFP.html" class="plain" title="Nature photos with inspirational quotes">Photos</a></li>
+			<li><a href="../HumorQuotesFP/HumorQuotesFP.html" class="plain" title="List of humorous quotes">Quotes</a></li>
+		</ul>
+	</nav>
+	
+	<p>The following are thirteen lessons from the O&apos;Reilly School of Technology Introduction to HTML and CSS class I took in the spring (April through June) of 2013. Each lesson is divided into three parts: <span class="section_name">objective</span>, <span class="section_name">skills applied</span>, and <span class="section_name">project</span>. The <span class="section_name">objective</span> is the goals or instructions for the lesson. The <span class="section_name">skills applied</span> section summarizes the HTML and CSS used. The <span class="section_name">project</span> contains a link to the HTML files created for the lesson. A few lessons have more than one set of these sections.</p>
+
+	<a href="#lesson1" class="TOC">Lesson 1: Introduction</a><br>
+	<a href="#lesson2" class="TOC">Lesson 2: The Basics</a><br>
+	<a href="#lesson3" class="TOC">Lesson 3: Syntax and Semantics</a><br>
+	<a href="#lesson4" class="TOC">Lesson 4: What is a Link?</a><br>
+	<a href="#lesson5" class="TOC">Lesson 5: Images</a><br>
+	<a href="#lesson6" class="TOC">Lesson 6: Cascading Style Sheets: Introduction</a><br>
+	<a href="#lesson7" class="TOC">Lesson 7: Cascading Style Sheets: The Box Model</a><br>
+	<a href="#lesson8" class="TOC">Lesson 8: Cascading Style Sheets: Inheritance</a><br>
+	<a href="#lesson9" class="TOC">Lesson 9: Positioning</a><br>
+	<a href="#lesson10" class="TOC">Lesson 10: Forms</a><br>
+	<a href="#lesson11" class="TOC">Lesson 11: Tables</a><br>
+	<a href="#lesson12" class="TOC">Lesson 12: Standards and Validation</a><br>
+	<a href="#lesson13" class="TOC">Lesson 13: Final Project</a><br>
+
+	<h2><a id="lesson1" class="headings_link">Lesson 1: Introduction</a></h2>
+	
+		<h3>Objective</h3>
+		<p>The goal of this project is to ensure that you understand how to use the O&apos;Reilly School of Technology sandbox to create and edit your files, and to familiarize yourself with the project submission procedure.</p>
+		
+		<h3>Skills applied</h3>
+			<ul>
+				<li>Various heading tags</li>
+				<li>Font-family and text color in &lt;h&gt;s (not in &lt;head&gt;)</li>
+			</ul>
+		
+		<h3>Project</h3>
+		<a href="Lesson1/GoobersUnite.html" class="proj_link">Goobers Unite!</a><br><br>
+	
+		<a href="#top" class="top">Back to top</a><br>
+			
+	<h2><a id="lesson2" class="headings_link">Lesson 2: The Basics</a></h2>
+			<h3>Objective 1</h3>
+			<p>Create a web page with the following elements:</p>
+			
+			<ul>
+				<li>Head</li>
+				<li>Title</li>
+				<li>Body</li>
+				<li>A paragraph</li>
+				<li>A list</li>
+			</ul>
+			
+			<p>Style the page to give it a background color, and style each individual list item with a different background color.</p>
+			
+			<h3>Skills applied 1</h3>
+			<ul>
+				<li>Internal CSS</li>
+				<li>Background color and font for &lt;body&gt;</li>
+				<li>Background color for classes in list items (<strong>Note:</strong> It would have been better to use ids.)</li>
+			</ul>
+			
+			<h3>Project 1</h3>
+			<a href="Lesson2/Lesson2Obj1.html" class="proj_link">Food Obsession</a><br>
+			
+			<h3>Objective 2</h3>
+			<p>Add style to the code below to make the background color of the page light yellow and the background color of each list item in the ordered list the same color as the fruit mentioned. </p>
+			
+			<code class="markup">
+				&lt;html&gt; <br>
+				&lt;head&gt; <br> 
+				&lt;title&gt;Favorite fruits&lt;/title&gt;<br>  
+				&lt;style&gt;   &lt;/style&gt;<br> 
+				&lt;/head&gt;<br> 
+				&lt;body&gt;<br>  
+				&lt;ol&gt;<br>  
+				&lt;li&gt;Blueberry&lt;/li&gt;<br>
+				&lt;li&gt;Orange&lt;/li&gt;<br>
+				&lt;li&gt;Pear&lt;/li&gt; <br>
+				&lt;li&gt;Apple&lt;/li&gt; <br>
+				&lt;/ol&gt; <br>
+				&lt;/body&gt; <br>
+				&lt;/html&gt; <br>
+			</code>
+
+			<h3>Skills applied 2</h3>
+			<ul>
+				<li>Internal CSS</li>
+				<li>Background color and font for &lt;body&gt;</li>
+				<li>Background color for classes in list items (<strong>Note:</strong> It would have been better to use ids.)</li>
+			</ul>
+			
+			<h3>Project 2</h3>
+			<a href="Lesson2/Lesson2Obj2.html" class="proj_link">List Items with Background Colors</a><br><br>
+			
+			<a href="#top" class="top">Back to top</a><br>
+			
+		<h2><a id="lesson3" class="headings_link">Lesson 3: Syntax and Semantics</a></h2>
+			<h3>Objective 1</h3>
+			<p>Correct any syntax and add any elements to the page created in Lesson 2, Objective 1 to make it &quot;valid&quot;.</p>
+			
+			<p>Add at least three of the following elements to the page:</p>
+			
+			<ul>
+				<li>Section</li>
+				<li>Header</li> 
+				<li>Footer</li>
+				<li>Div</li> 
+				<li>Em</li>
+				<li>Strong</li>
+				<li>Time</li>
+			</ul>
+			
+			<p>Use ids to add meaning to your page, if you need them.</p>
+
+			<h3>Skills applied 1</h3>
+			<ul>
+				<li>Internal CSS</li>
+				<li>Used all elements in the list, except &lt;em&gt;.</li>
+				<li>Background-color and font-family for &lt;body&gt;</li>
+				<li>Wrapped content in &lt;div&gt; with section id to style border and padding.</li>
+				<li>Used class in list to style background color of bullet point text. (<strong>Note:</strong> It would have been better to use ids.)</li>
+				<li>Used &lt;time&gt; with datetime attribute.</li>
+				<li>Wrapped footer in &lt;div&gt; with id to style font size and color.
+			</ul>
+			
+			<h3>Project 1</h3>
+			<a href="Lesson3/Lesson3Obj1.html" class="proj_link">Food Obsession (with Extra Styling and Elements)</a><br>
+			
+			<h3>Objective 2</h3>
+			<p>Mark up the following HTML with some elements that add meaning to the content. Use the best element for the job! Be sure to correct any errors that might be in the code.</p>
+			
+			<code class="markup">
+				&lt;!doctype html&gt;<br> 
+				&lt;html&gt;<br> 
+				&lt;head&gt;<br>
+				&lt;meta charset="utf-8"&gt;  Notes Page<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;  Daily notes to myself<br>
+				&lt;BR /&gt;<br>
+				I really like journaling. I&apos;m adding some notes
+				to this Web page for my journal later.<br>
+				&lt;BR /&gt;<br>
+				Note on July 27<br>
+				&lt;BR /&gt;<br>
+				I&apos;m having such a great day. The sun was out and
+				I went sailing.<br>
+				&lt;BR /&gt;<br>
+				Note on August 3<br>
+				&lt;BR /&gt;<br>
+				Was thinking about all the places I&apos;d like
+				to go today. Like &lt;BR /&gt;
+				Florida Keys &lt;BR /&gt;
+				Grand Canyon &lt;BR /&gt;
+				Yellowstone National Park &lt;BR /&gt;<br>
+				I&apos;d be so excited to go to any of these places.<br>
+				&lt;/body&gt; <br>
+				&lt;/html&gt;  <br>
+			</code>
+			
+			<h3>Skills applied 2</h3>
+			<p>Corrected code as needed.</p> 
+			
+			<ul>
+				<li>Internal CSS</li> 
+				<li>Added &lt;time&gt; with datetime attribute.</li>
+				<li>Used heading, paragraph, and list tags.</li>
+			</ul>
+			
+			<h3>Project 2</h3>
+			<a href="Lesson3/Lesson3Obj2.html" class="proj_link">Daily Notes to Myself</a><br><br>		
+		
+			<a href="#top" class="top">Back to top</a><br>
+			
+		<h2><a id="lesson4" class="headings_link">Lesson 4: What is a Link?</a></h2>
+			<h3>Objective 1</h3>
+			<p>Create a web page with:</p>
+			
+			<ul>
+				<li>Links to web pages that you visit frequently</li>
+				<li>A link to a page you have created that is stored in your O&apos;Reilly School of Technology account</li>
+			</ul>
+			
+			<h3>Skills applied 1</h3>
+			<ul>
+				<li>Internal CSS</li>
+				<li>Background-color and font-family for &lt;body&gt;</li>
+				<li>Wrapped content in &lt;div&gt;s with ids to style background color and padding.</li>
+				<li>Used ids to vary color and text decoration in links.</li>
+			</ul>
+			
+			<h3>Project 1</h3>
+			<a href="Lesson4/Lesson4Obj1.html" class="proj_link">Visiting Web Pages</a><br>
+			
+			<h3>Objective 2</h3>
+			<p>In the same folder where you saved the file pets.html, create a subfolder named cats. Then, in that subfolder, create three files:</p>
+			
+			<ul>
+				<li>pickles.html</li>
+				<li>jack.html</li> 
+				<li>annie.html</li>
+			</ul>
+			
+			<p>Put whatever content you want into these files, but in each, include a link back to pets.html. Edit pets.html and create relative links for the three cats in the list, so that clicking on the list item takes you to the corresponding page that you just created for that cat.</p>
+			
+			<p>Add some styling to your links or see if you can use relative links to get back to pets.html.</p>
+			
+			<h3>Skills applied 2</h3>
+			<ul>
+				<li>Internal CSS</li>
+				<li>Three relative links, one absolute link</li>
+				<li>Cross-references within page using ids</li>
+				<li>Title attribute in links for accessibility/mouse-over text</li>
+				<!-- note: alt tag required for images for code to valid; accessibilty, or in case image doesn't load. Title attribute in link for accessibility and mouse-over text.-->
+				<li>Font-family, font-size, margin, text color, and background-color for &lt;body&gt;</li>
+				<li>Link color, hover color, visited color on main page</li>
+				<li>Used ids to vary link color, hover color, visited color, and text decoration in links on subpages.</li>
+				<li>Links to return to main web page</li>
+			</ul>
+			
+			<h3>Project 2</h3>
+			<a href="Lesson4/pets.html" class="proj_link">Pets!</a><br><br>
+
+			<a href="#top" class="top">Back to top</a><br>
+	
+		<h2><a id="lesson5" class="headings_link">Lesson 5: Images</a></h2>
+			<h3>Objective</h3>
+			<p>Create a web page with the following elements, attributes, and style:</p>
+			
+			<ul>
+				<li>Images that you have found while surfing the web</li>
+				<li>A background using the plaster image we gave you, or another image you like</li>
+				<li>A border around each image you use, with a different color for each border</li>
+			</ul>
+			
+			<p>Be sure to use the style section to define the image borders.</p>
+			
+			<h3>Skills applied</h3>
+			<ul>
+				<li>Internal CSS</li>
+				<li>Styled photos with ids.</li>
+				<li>Added background photo.
+				<ul>
+					<li>Reduced opacity of photo.</li>
+					<li>Used no-repeat property value.</li>
+					<li>Centered photo on page.</li>
+				</ul>
+				<li>Used alt attribute for images to provide accessibility.</li>
+			</ul>
+			
+			<h3>Project</h3>
+			<a href="Lesson5/Lesson5Obj1.html" class="proj_link">Inspirations from Japanese Zen Gardens</a><br><br>
+			
+			<a href="#top" class="top">Back to top</a><br>
+				
+		<h2><a id="lesson6" class="headings_link">Lesson 6: Cascading Style Sheets: Introduction</a></h2>
+			<h3>Objective 1</h3>
+			
+			<p>Create a web page that contains at least:</p>
+			
+			<ul>
+				<li>An &lt;h1&gt; heading as the main heading</li>
+				<li>Five (short!) paragraphs</li>
+				<li>Five &lt;h2&gt; headings, one for each paragraph</li>
+			</ul>
+			
+			<p>Use as many other elements as you like.</p> 
+			
+			<p>Create and link to a separate CSS file that adds style to the page to:</p>
+			
+			<ul>
+				<li>Give every other paragraph a different background color.</li>
+				<li>Change the default font of the first &lt;h2&gt; heading.</li>
+				<li>Change the default font of the &lt;h1&gt; heading.</li>
+			</ul>
+			
+			<p>In your paragraphs, describe the style choices you made and if you used classes or ids, why you did so.<p>
+			
+			<h3>Skills applied 1</h3>
+			<ul>
+				<li>External CSS file</li>
+				<li>Background-color and font-family for &lt;body&gt;</li>
+				<li>Wrapped header and main content in &lt;div&gt;s for styling</li>
+				<li>Font-family for headings with id</li>
+				<li>Text and background color for &lt;p&gt; using class</li>
+			</ul>
+			
+			<h3>Project 1</h3>
+			<a href="Lesson6/Lesson6Obj1.html" class="proj_link">Thing 1 and Thing 2</a><br>
+				
+			<h3>Objective 2</h3>
+			<p>Create styles in the document below so that:</p>
+			
+			<ul>
+				<li>The &lt;body&gt; of the page is in a sans-serif font.</li>
+				<li>Huey has a blue background and yellow text.</li>
+				<li>Louie has a yellow background and blue text.</li> 
+				<li>Dewey has a different font from the rest of the page.</li>
+			</ul>
+			
+			<code class="markup">
+				&lt;!doctype html&gt;<br>
+				&lt;html lang="en"&gt;<br>
+				&lt;head&gt;<br>
+				&lt;title&gt;My favorite ducks&lt;/title&gt;<br>
+				&lt;meta charset="utf-8"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+				&lt;h1&gt;My favorite ducks are...&lt;/h1&gt;<br>
+				&lt;ul&gt;<br>
+				&lt;li&gt;Huey&lt;/li&gt;<br>
+				&lt;li&gt;Louie&lt;/li&gt;<br>
+				&lt;li&gt;Dewey&lt;/li&gt;<br>
+				&lt;/ul&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</code>
+			
+			<h3>Skills applied 2</h3>
+			<ul>
+				<li>Internal CSS</li>
+				<li>Font-family for &lt;body&gt;</li>
+				<li>Background and text color styling for bullet point text using ids with &lt;li&gt;</li>
+			</ul>
+			
+			<p>In addition to the lesson requirements, I wanted the color of the bullet points to remain black rather than match the color assigned to each bullet point text. In order to do so, instead of placing an id in the &lt;li&gt;s and modifying the color of this id in the CSS, I added &lt;span&gt;s with ids around the bullet point text. With the first method (using ids in the &lt;li&gt;s), because &lt;li&gt;s are block level elements, the highlighting extended across the browser window. With the second method (using ids in &lt;span&gt;s around the bullet point text), because &lt;span&gt;s are inline elements, the bullet points remained black. Also, the highlighting only extended over the text, not across the entire browser window.</p> 
+			
+			<p><strong>Note:</strong> For Lesson 2, Objective 1, I used class in &lt;li&gt;s to change the background color of the text. This did not change the color of the bullet points; the bullet points remained black. Why did the bullet point not change when I used an attribute in &lt;li&gt;? Because in Lesson 2, Objective 1, I only changed the background color. In Lesson 6, Objective 2, I changed both the background color <em>and</em> the text color.</p>
+			
+			<h3>Project 2</h3>
+			<a href="Lesson6/Lesson6Obj2.html" class="proj_link">List of Ducks with Colored Bullet Points and Colored/Highlighted Text</a><br>
+			<a href="Lesson6/Lesson6Obj2Modified.html" class="proj_link">List of Ducks with Colored/Highlighted Text and Black Bullet Points</a><br><br>
+			
+			<a href="#top" class="top">Back to top</a><br>
+			
+		<h2><a id="lesson7" class="headings_link">Lesson 7: Cascading Style Sheets: The Box Model</a></h2>
+			<h3>Objective</h3>
+			<p>Create a web page that contains a &quot;pull quote.&quot; A pull quote is a piece of text that is &quot;pulled&quot; from the main content and highlighted as a quote. You often see pull quotes in magazine or newspaper articles.</p>
+			
+			<p>Create and link to a separate CSS file so that your HTML file contains:</p>
+			
+			<ul>
+				<li>A &lt;body&gt; with a light grey background color and a margin of 20px on all sides</li>
+				<li>A heading with an underline made from a border</li>
+				<li>At least three paragraphs, one of which is the pull quote</li>
+				<li>The pull quote should have: 
+				<ul>
+					<li>A dark grey background color</li>
+					<li>White text</li>
+					<li>A top margin of 15px and the rest of the sides 10px </li>
+					<li>A stylized border (e.g., dotted or dashed)</li>
+					<li>Padding of 10px on all sides</li>
+				</ul>
+			</ul>
+			
+			<h3>Skills applied</h3>
+			<ul>
+				<li>External CSS file</li>
+				<li>Background-color and margin for &lt;body&gt;</li>
+				<li>Border styling for &lt;h1&gt;</li>
+				<li>Background and text color, margin, padding, and border styling for pull quote using &lt;p&gt; id</li>
+			</ul>
+			
+			<p><strong>Note:</strong> Technically, I did not create a pull quote (i.e., text copied from the body text and pulled into a separate area). It would have been better to use &lt;blockquote&gt; for the page that I produced.</p>
+			
+			<h3>Project</h3>
+			<a href="Lesson7/Lesson7Obj1.html" class="proj_link">Leo Buscalgia</a><br><br>
+		
+			<a href="#top" class="top">Back to top</a>
+			
+		<h2><a id="lesson8" class="headings_link">Lesson 8: Cascading Style Sheets: Inheritance</a></h2>
+			<h3>Objective</h3>
+			<p>Create an external style sheet for the following HTML:</p>
+			
+			<code class="markup">
+				&lt;!doctype html&gt; <br>
+				&lt;html lang="en"&gt; <br>
+				&lt;head&gt; <br>
+				&lt;title&gt;My favorite ducks&lt;/title&gt; <br>
+				&lt;meta charset="utf-8"&gt; <br>
+				&lt;link rel="stylesheet" href="duckstyle.css"&gt; <br>
+				&lt;/head&gt; <br>
+				&lt;body&gt; <br>
+				&lt;div id="header"&gt; <br>
+				&lt;h1&gt;My favorite ducks&lt;/h1&gt; <br>
+				&lt;span&gt;(A duck tale)&lt;/span&gt; <br>
+				&lt;/div&gt; <br>
+				&lt;div id="content"&gt; <br>
+				&lt;p&gt; I&apos;m lucky to have many ducks in my life. I have three ducks: &lt;span&gt;Huey&lt;/span&gt;, <br>
+				&lt;span&gt;Louie&lt;/span&gt;, and <br>
+				&lt;span&gt;Dewey&lt;/span&gt;. <br>
+				&lt;/p&gt; <br>
+				&lt;p&gt; They are all very rambunctious ducks, and make a lot of noise. &lt;/p&gt;<br>
+				&lt;/div&gt; <br>
+				&lt;/body&gt; <br>
+				&lt;/html&gt; <br>
+			</code>
+			<br>
+			
+			<p>Your style sheet should be set up so that the duck names inherit:<p>
+			
+			<ul>
+				<li>A sans-serif font from the &lt;body&gt;</li> 
+				<li>A color of light grey from the &lt;div&gt; with the content id</li> 
+				<li>A text-align of center from the &lt;p&gt; elements</li>
+			</ul>
+			
+			<h3>Skills applied</h3>
+			<ul>
+				<li>External CSS</li>
+				<li>Wrapped heading and paragraphs in &lt;div&gt;s.</li>
+				<li>Font-family for &lt;body&gt;</li>
+				<li>Listed fonts for Windows, Mac, cross-platform compatibility, and generic sans-serif fonts to help ensure the fonts I want are used regardless of the platform the user has.</li>
+				<li>Text color for &lt;div&gt; id</li>
+				<li>Text align for &lt;p&gt;</li>
+			</ul>
+			
+			<p><strong>Note:</strong> Text color in &lt;div&gt; and text align in &lt;p&gt; could have been combined into one CSS rule for the same end result.</p>
+			
+			<h3>Project</h3>
+			<a href="Lesson8/Lesson8Obj1.html" class="proj_link">Ducks</a><br><br>
+		
+			<a href="#top" class="top">Back to top</a><br>
+			
+		<h2><a id="lesson9" class="headings_link">Lesson 9: Positioning</a></h2>
+			<h3>Objective</h3>
+			<p>Using the code below, create HTML and CSS files so that:</p>
+			
+			<ul>
+				<li>Each &lt;div&gt; element with the box class is 100px wide and 50px high. (Use height: 50px in your CSS to set the height of a block element like &lt;div&gt;.)</li>
+				<li>The red &lt;div&gt; has a red background color and be positioned 50px from the top and left</li>
+				<li>The green &lt;div&gt; has a green background color and be positioned so that its left side is 10px to the right of the red &lt;div&gt;</li>
+				<li>The blue &lt;div&gt; has a blue background color and be positioned so that its left side is 10px to the right of the green &lt;div&gt;</li>
+			</ul>
+			
+			<p>Use the following coding:</p>
+			<code class="markup">
+				&lt;!doctype html&gt;<br>
+				&lt;html lang="en"&gt;<br>
+				&lt;head&gt;<br>
+				&lt;title&gt;Positioning Quiz&lt;/title&gt;<br>
+				&lt;meta charset="utf-8"&gt;<br>
+				&lt;link rel="stylesheet" href="colors.css"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+				&lt;div id="container"&gt;<br>
+				&lt;div class="box" id="red"&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;div class="box" id="green"&gt;<br> 
+				&lt;/div&gt;<br>
+				&lt;div class="box" id="blue"&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</code><br>
+			
+			<p>Now that you&apos;ve positioned the colored &lt;div&gt; elements, change the CSS so that their positions are shifted over 200px from the top and 200px from the left by positioning the container &lt;div&gt;.</p>
+			
+			<p><strong>Goal:</strong> In normal document flow, these three colored boxes would appear vertically one on top of the other. Removed from normal flow, these three colored boxes appear horizontally one after the other with 10 pixels of space beween them. The following are four examples using absolute and relative positioning: </p>
+			
+			<ol>
+				<li>Absolute positioning</li>
+				<li>Relative positioning without container &lt;div&gt;, intentionally resulting in the <strong>same</strong> placement of the colored boxes as in absolute positioning</li>
+				<li>Relative positioning using container &lt;div&gt;, intentionally resulting in a <strong>different</strong> placement of the colored boxes than absolute positioning</li>
+				<li>Relative positioning using container &lt;div&gt;, intentionally resulting in the <strong>same</strong> placement of the colored boxes as in absolute positioning</li>
+			</ol>
+			
+			<h3>Skills applied</h3>
+
+			<h4>Absolute positioning</h4>
+			<ul>
+				<li>Wrapped content in container &lt;div&gt;. Used relative positioning and set top and left position for the container &lt;div&gt; (relative position = content taken out of flow and placed relative to where it would normally appear in the document flow)</li> 
+				<li>Wrapped three colored boxes in box &lt;div&gt;. Used absolute positioning and set the width, height, and top of each box (absolute position = content taken out of flow and placed in a specified location)</li> 
+				<li>Wrapped each color box in a &lt;div&gt;. Set the background color and left position for each &lt;div&gt;.</li>
+			</ul>
+
+			<h4>Relative positioning without container &lt;div&gt;</h4>
+			<p>(intentionally resulting in the <strong>same</strong> placement of the colored boxes as in absolute positioning)<br>
+			Aimed to achieve same layout as with absolute positioning but by using relative positioning. Making boxes relative places them relative to the container element, which is also relative; the boxes are not relative to position 0,0.</p>
+			
+			<ul>
+				<li>Commented out container &lt;div&gt;.</li>
+				<li>In box &lt;div&gt;, changed absolute positioning to relative positioning. Changed values of left and top properties.</li>
+				<li>In each colored box &lt;div&gt;, changed values of top and left properties.</li>
+			</ul>
+			
+			<h4>Relative positioning using container &lt;div&gt;</h4>
+			<p>(intentionally resulting in a <strong>different</strong> placement of the colored boxes than in absolute positioning)<br>
+			Explored what happened if container &lt;div&gt; not commented out when using relative positioning for both the box &lt;div&gt; and the container &lt;div&gt;. The result in this example is <em>not</em> the same as when absolute positioning was used; the boxes are further to the right than in the absolute positioning example. </p>
+			
+			<ul>
+				<li>In container &lt;div&gt;, kept relative positioning and top and left properties.</li>
+				<li>In box &lt;div&gt;, kept relative positioning. Changed values of left and top properties.</li>
+				<li>In each colored box &lt;div&gt;, changed values of top and left properties.</li>
+			</ul>
+			
+			<h4>Relative positioning using container &lt;div&gt;</h4>
+			<p>(intentionally resulting in the <strong>same</strong> placement of the colored boxes as in absolute positioning)<br>
+			Aimed to achieve same layout as with absolute positioning but by using relative positioning and the container &lt;div&gt;. Basically, the only thing that needed to change was the value of the top of each box. (In normal flow, the boxes would have stacked on top of each other. To horizontally align them, the value of the top needed to change.)</p>
+			
+			<ul>
+				<li>In container &lt;div&gt;, kept relative positioning and top and left properties.</li>
+				<li>In box &lt;div&gt;, kept relative positioning. Changed values of left and top properties.</li>
+				<li>In each colored box &lt;div&gt;, changed values of top and left properties.</li>
+			</ul>
+			
+			<h3>Project</h3>
+			<a href="Lesson9/Lesson9Obj1_3BoxAbsolute.html" class="proj_link">Colored Boxes: Using Absolute Positioning</a><br>
+			
+			<a href="Lesson9/Lesson9Obj1_3BoxRelative.html" class="proj_link">Colored Boxes: Using Relative Positioning Without Container &lt;div&gt;</a><br> (intentionally resulting in the <strong>same</strong> placement of the colored boxes as in absolute positioning)<br>
+			
+			<a href="Lesson9/Lesson9Obj1_3BoxRelativeII.html" class="proj_link">Colored Boxes: Using Relative Positioning with Container &lt;div&gt;</a><br> (intentionally resulting in a <strong>different</strong> placement of the colored boxes than absolute positioning)<br>
+			
+			<a href="Lesson9/Lesson9Obj1_3BoxRelativeContainer.html" class="proj_link">Colored Boxes: Using Relative Positioning with Container &lt;div&gt;</a><br> (intentionally resulting in the <strong>same</strong> placement of the colored boxes as in absolute positioning)<br><br>
+		
+			<a href="#top" class="top">Back to top</a><br>
+			
+		<h2><a id="lesson10" class="headings_link">Lesson 10: Forms</a></h2>
+		<h3>Objective</h3>
+		<p>Imagine you&apos;re a teacher and you&apos;re designing a form to test your students on a topic. (Pick whatever topic you like!)</p>
+
+		<p>Create a form for your test and include at least four different input types for different kinds of questions you might ask your students. Include test instructions and topic headings if you like. Add some style to your form using CSS in an external style sheet.</p>
+		
+		<h3>Skills applied</h3>
+		<ul>
+			<li>External CSS</li>
+			<li>Listed fonts for Windows, Mac, cross-platform compatibility, and generic sans-serif fonts to help ensure that the fonts I want are used regardless of the platform the user has.</li>
+			<li>Set font-size in &lt;body&gt; to medium and subsequent font sizes to percentages so that font size would change relative to each other if the user changed the text size in their browser.</li>
+			<li>Added background photo.
+			<ul>
+				<li>Reduced opacity of photo.</li>
+				<li>Fixed image to browser window so that image resizes with the window.</li>
+				<li>Centered image on the page.</li>
+				<li>Added coding to CSS rule for cross-browser compatibility.</li>
+			</ul>
+			<li>Added background color to text boxes.</li>
+			<li>Four form types
+			<ul>
+				<li>Text boxes for short answer as well as last and first names</li>
+				<li>Radio buttons<br><strong>Note:</strong> Test taker can only select one radio button.</li>
+				<li>Check boxes<br><strong>Note:</strong> Test taker can only select one check box. Originally, I wanted them to be able to select as many check boxes as were applicable. Unfortunately, to do so requires JavaScript or PHP coding, which is well beyond the scope of this course.</li>
+				<li>Text area for extended answer</li>
+			</ul>
+			<li>Used absolute/relative positioning to separate page content into two columns: four quiz questions in left column and text input boxes for names in right column. I used absolute/relative positioning for columns since there was no footer that would cause problems with this method; setting one column to a certain width may cause that column to overlap with a footer that spans the browser when the browser window is resized. 
+			<li>Placed &lt;form&gt; outside of the &lt;div&gt;s in order to have only one &quot;Submit&quot; button for all of the content on the page.</li>
+		</ul>
+		
+		<h3>Project</h3>
+		<a href="Lesson10/Lesson10Obj1_onesubmit.html" class="proj_link">Early Daoism in China: Quiz #1</a><br><br>
+	
+		<a href="#top" class="top">Back to top</a><br>
+		
+	<h2><a id="lesson11" class="headings_link">Lesson 11: Tables</a></h2>
+    	<h3>Objective</h3>
+		<p>Look in <span class="italic">Wikipedia</span> at your favorite topics and find an entry that has some table data.</p>
+
+		<p>Almost every entry has some kind of table data, but if you&apos;re struggling to find something, try the <span class="italic">Wikipedia</span> page for Tim O&apos;Reilly (the founder of O&apos;Reilly Media). You&apos;ll see on the right side of the page a box with some biography data about Tim. (Almost every person listed in <span class="italic">Wikipedia</span> has this kind of biography data, so pick another person if you like.)</p>
+
+		<p>Use the data you find in <span class="italic">Wikipedia</span> to create a table to hold it. Above the table, in one or more paragraphs, describe why you chose that data and your decision-making process for structuring the table to best manage that data. For instance, why did you pick rows or columns for the table headings? Did you create a separate cell for each item of data, or did you combine some pieces of data, and if so, why?</p>
+
+		<p>Once you&apos;ve created your table, add some style to make it look nice and, most important, easy to read. Create and link to a separate CSS file.</p>
+		
+        <h3>Skills applied</h3>
+
+		<ul>
+    		<li>External CSS</li>
+    		<li>Listed fonts for Windows, Mac, cross-platform compatibility, and generic sans-serif fonts to help ensure that the fonts I want are used regardless of the platform the user has.</li>
+			<li>Set font-size in &lt;body&gt; to medium and subsequent font sizes to percentages so that the font size would change relative to each other if the user changed the text size in their browser.</li>
+			<li>Font-family, background-color for &lt;body&gt;</li>
+    		<li>Font-size, font-weight, text-decoration, text-align for &lt;caption&gt;</li>
+    		<li>Font-weight for problem class in &lt;span&gt;</li>
+			<li>Created separate styles for elements in headers (subfamily or genus names vs. species or parenthetical text under genus names).
+			<ul>
+				<li>Text-align, width, padding, font-weight for &lt;th&gt;</li>
+				<li>Font-weight for &lt;th&gt; in &lt;tr&gt; with subfamily or genus class</li>
+			</ul>
+			<li>Created separate styles for items in &lt;tr&gt;.
+			<ul>
+				<li>Font-size for &lt;tr&gt; with subfamily class</li>
+				<li>Background-color for &lt;tr&gt; with species class</li>
+				<li>Font-weight for &lt;span&gt; with tabheader class in &lt;tr&gt;</li>
+			</ul>
+			<li>Width and padding for &lt;td&gt;
+			<ul>
+				<li>Setting width in &lt;td&gt; prevented table from taking up entire browser window.</li>
+			</ul>
+			<li>Added colspan attribute to &lt;td&gt; or &lt;th&gt; to solve validation error caused by rows having different number of columns (i.e., one column for genus names, two columns for species name and description).</li>
+			<li>Added cross-references within document to help user navigate page. Styled with table class.</li>
+			<li>Used different styling for different types of links (e.g., &quot;back to top&quot; link vs. source link).
+			<ul>
+				<li>Font-style and font-size for source id</li>
+				<li>Link text color for source id and table class</li>
+				<li>Link hover color for source id and table class</li>
+				<li>Link visited color for source id and table class</li>
+			</ul>
+		</ul>
+		
+		<h3>Project</h3>
+ 		<a href="Lesson11/Lesson11Obj1.html" class="proj_link">Hamsters!</a><br><br>
+
+		<a href="#top" class="top">Back to top</a><br>
+		
+		<h2><a id="lesson12" class="headings_link">Lesson 12: Standards and Validation</a></h2>
+    		<h3>Objective 1</h3>
+			<p>Recall this code from the lesson:</p>
+			
+			<code class="markup">&lt;a href="https://oreillyschool.com" accesskey="h"&gt;Home&lt;/a></code>
+			<br>
+			
+			<p>Create a file with three links and access keys for each of the links. Give users a visual indication of the access key using CSS styles.</p>
+
+        	<h3>Skills applied 1</h3>
+			<ul>
+    			<li>External CSS</li>
+    			<li>Added customized favicon.</li>
+    			<li>Listed fonts for Windows, Mac, cross-platform compatibility, and generic sans-serif fonts to help ensure that the fonts I want are used regardless of the platform the user has.</li>
+				<li>Font-family, background-color for &lt;body&gt;</li>
+				<li>Set separate font-size and font-family in &lt;h&gt;.</li>
+    			<li>Accesskey attribute in &lt;a&gt;</li>
+    			<li>Key class in &lt;span&gt; for font-weight of first letter in link for visual indication of accessibility</li>
+    		</ul>
+		
+			<h3>Project 1</h3>
+ 			<a href="Lesson12/Lesson12Obj1_2.html" class="proj_link">Getting Away From It All</a><br>
+
+    		<h3>Objective 2</h3>
+			<p>Use the W3C Validator to try validating the code below. There will be a few errors. Fix the errors and submit the corrected code.</p>
+			
+			<code class="markup">
+				&lt;!doctype html&gt;<br>
+				&lt;!doctype html&gt;<br>
+				&lt;html lang="en"&gt;<br>
+				&lt;head&gt;<br>
+				&lt;title&gt;<br>Validate This&lt;/title&gt;<br>
+				&lt;meta charset="utf-8"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+				&lt;div id="section" myattr="test"&gt;<br>
+				&lt;h1&gt;<br>Fun Facts about Me&lt;/h1&gt;<br>
+				&lt;h2&gt;&lt;time datetime="Monday at 9am"&gt; Monday, September 19, 2011&lt;/time&gt;&lt;/h2&gt;<br>
+				&lt;p&gt;<br>
+				I &lt;em&gt;love&lt;/em&gt; drinking coffee while listening to music. This morning, I'm listening to:&lt;/p&gt;<br>
+				&lt;ul&gt;<br>
+				&lt;li&gt;<br>Pat Metheny&lt;/li&gt;<br>
+				&lt;li&gt;<br>The Beatles&lt;/li&gt;<br>
+				&lt;/ul&gt;<br>
+				&lt;p&gt;<br>
+				while drinking a latte. Here's a picture of my coffee:
+				&lt;blink&gt;<br>
+				&lt;img src="images/coffee2.jpg" alt="coffee"&gt;<br>
+				&lt;/p&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		</code>
+
+        <h3>Skills applied 2</h3>
+		<p>I fixed the code so that it passed the W3 validator.</p>
+    		
+		<h3>Project 2</h3>
+ 		<a href="Lesson12/Lesson12Obj2.html" class="proj_link">Fun Facts About Me</a><br><br>
+
+		<a href="#top" class="top">Back to top</a><br>
+		
+		
+	<h2><a id="lesson13" class="headings_link">Lesson 13: Final Project</a></h2>
+    	<h3>Objective</h3>
+    	<p>This lesson is your final project for the course. The goal of this project is to create an entire website. You can make this website for any subject you wish. If you are having trouble coming up with an idea, you might consider creating an online portfolio and resume. Such a website might include:</p>
+    	
+    	<ul>
+    		<li>A main page with general information about you.</li>
+    		<li>Links to pages with the following information about you: 
+    		<ul>
+				<li>Work experience</li>
+				<li>Education</li>
+				<li>Interests</li>
+				<li>Past and current websites&#8212;you can include the pages you created throughout this course.</li>
+				<li>Links to your favorite websites</li>
+			</ul>
+		</ul>
+
+		<p>As the final project, this website must:</p>
+		
+		<ul>
+			<li>Include elements and properties discussed in both the HTML and CSS portions of the course.</li>
+			<li>Use an external CSS file for all the pages on the site.</li>
+			<li>Observe good programming practices.</li>
+			<li>Validate against the W3 online validator.</li>
+			<li>Use good names for ids and classes.</li>
+			<li>Use indentation to make the code readable.</li>
+			<li>Be well-organized, professional, easy to navigate, and aesthetically pleasing, with no typos or syntax 		
+errors.</li>
+			<li>Work with:
+			<ul>
+				<li>IE on Windows</li>
+				<li>FireFox on Windows</li>
+				<li>Safari on Mac</li>
+				<li>Chrome on Mac</li>
+			</ul>
+		</ul>
+		
+		<p>Be creative and have fun! You want to present yourself in a professional yet friendly way, so feel free to express yourself!</p>
+		
+        <h3>Skills applied</h3>
+        <p>Everything learned in the course...and then some!</p>
+        
+		<h3>Project</h3>
+ 		<p><a href="../FinalProject.html">This Website</a>: Home, Resume, Class Lessons, Photos, and Quotes.</p>
+
+		<a href="#top" class="top">Back to top</a><br><br>
+		
+</body>
+</html>
