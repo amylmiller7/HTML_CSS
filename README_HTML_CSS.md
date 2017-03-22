@@ -8,7 +8,7 @@ Repository includes final project for class. Final project is website that uses 
 
 To render final project in browser:
 
-1. Under **HTML_CSS*, click **OReilly** > **HTML_CSS_final_project**.
+1. Under HTML_CSS, click **OReilly** > **HTML_CSS_final_project**.
 
 2. Click the HTML file in that project folder.
 
