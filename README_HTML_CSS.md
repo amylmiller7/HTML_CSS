@@ -8,12 +8,12 @@ Repository includes final project for class. Final project is website that uses 
 
 To render final project in browser:
 
-1. Click **OReilly** > **HTML_CSS_final_project** > **FinalProject.html**.
+1. Click **OReilly**, **HTML_CSS_final_project**, and **FinalProject.html**.
 
-2. Copy URL for FinalProject.html. 
+2. Copy the URL for FinalProject.html. 
 
 3. Go to http://rawgit.com/. 
 
-4. Paste URL for FinalProject.html.
+4. Paste the URL for FinalProject.html.
 
-5. Copy URL that RawGit generates under Use this URL in production into your browser.
+5. Copy the URL that RawGit generates under **Use this URL in production** into your browser.
