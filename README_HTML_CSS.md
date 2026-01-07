@@ -1,21 +1,9 @@
 # HTML_CSS
-Repository includes final project for class. Final project is website that uses multiple HTML, CSS, and jpeg files.
+This repository contains HTML and CSS course projects. 
 
-## Class
-* Introduction to HTML and CSS, O'Reilly School of Technology, Lorri Coey
+## Classes
+* **Introduction to HTML and CSS** (O'Reilly School of Technology) &ndash; Lorri Coey
 
-## Notes
+## Live projects
 
-To render final project in browser:
-
-1. Under HTML_CSS, click **OReilly** > **HTML_CSS_final_project**.
-
-2. Click the HTML file in that project folder.
-
-3. Copy the URL for FinalProject.html. 
-
-4. Go to http://rawgit.com/. 
-
-5. Paste the URL for FinalProject.html.
-
-6. Copy the URL that RawGit generates under **Use this URL in production** into your browser.
+Projects are hosted on GitHub Pages. View the complete project list at https://amylmiller7.github.io/HTML_CSS/index.html.
